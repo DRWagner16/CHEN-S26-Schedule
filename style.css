@@ -1,0 +1,191 @@
+/* In style.css */
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.page-container {
+    width: 95%;
+    max-width: 1600px;
+}
+h1 {
+    text-align: center;
+    color: #003366;
+    margin-bottom: 20px;
+}
+h2 {
+    text-align: center;
+    color: #003366;
+    margin-bottom: 14px;
+}
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+.filter-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.filters label {
+    font-weight: 500;
+}
+.filters select, .filters button {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.filters button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-color: #007bff;
+}
+.filters button:hover {
+    background-color: #0056b3;
+}
+.course-filter-container {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+.course-filter-container h3 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+.checkbox-container {
+    border: 1px solid #ddd;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 8px;
+}
+.checkbox-item {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.calendar-container {
+    border: 1px solid #ddd;
+    background-color: #fff;
+    overflow-x: auto;
+}
+.calendar-grid {
+    display: grid;
+    grid-template-columns: 80px repeat(5, 1fr);
+    min-width: 1200px;
+}
+.time-column, .day-column { 
+    display: flex; 
+    flex-direction: column;
+    border-left: 1px solid #ddd;
+}
+.time-column {
+    border-left: none;
+}
+.day-content {
+    position: relative;
+    flex-grow: 1;
+}
+
+/* --- THIS IS THE CORRECTED BLOCK --- */
+.day-header, .time-slot.header { 
+    background-color: #e9ecef; 
+    font-weight: bold; 
+    text-align: center; 
+    border-bottom: 1px solid #ddd;
+    flex-shrink: 0;
+    /* Replaced padding with fixed height and line-height for perfect alignment */
+    height: 40px;
+    line-height: 40px; 
+}
+
+.time-slot { 
+    height: 60px; 
+    border-bottom: 1px dotted #eee; 
+    padding-left: 5px; 
+    box-sizing: border-box; 
+    font-size: 12px; 
+    color: #777;
+}
+.class-event { 
+    position: absolute; 
+    background-color: #a3c4f3; 
+    border: 1px solid #5a9bd5;  
+    border-radius: 4px; 
+    padding: 4px; 
+    box-sizing: border-box; 
+    font-size: 11px; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+    z-index: 10; 
+    cursor: pointer; 
+    transition: all 0.2s ease-in-out;
+}
+.class-event:hover {
+    z-index: 20;
+    transform: scale(1.02);
+}
+.event-title { 
+    font-weight: bold; 
+    margin-bottom: 2px; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+.event-tooltip { 
+    display: none; 
+    position: absolute; 
+    top: 100%; 
+    left: 0; 
+    width: 250px; 
+    background-color: #333; 
+    color: #fff; 
+    padding: 10px; 
+    border-radius: 6px; 
+    z-index: 100; 
+    font-size: 13px; 
+    line-height: 1.4; 
+    pointer-events: none; 
+}
+.class-event:hover .event-tooltip { 
+    display: block; 
+}
+.event-tooltip strong { 
+    color: #a3c4f3; 
+}
+
+/* Add this to the end of style.css */
+
+.link-button {
+    padding: 8px 12px;
+    border: 1px solid #6c757d;
+    background-color: #6c757d;
+    color: white;
+    border-radius: 4px;
+    font-size: 14px;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.link-button:hover {
+    background-color: #5a6268;
+    border-color: #545b62;
+}
