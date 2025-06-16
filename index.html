@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spring 2025 CH EN Course Schedule</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="page-container">
+        <h1>Spring 2025 CH EN Course Schedule</h1>
+            <h2>Hover over a course for more information</h2>
+        <div class="filters">
+            <div class="filter-group">
+                <label for="instructor-filter">Filter by Instructor:</label>
+                <select id="instructor-filter">
+                    <option value="all">All Instructors</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="type-filter">Filter by Type:</label>
+                <select id="type-filter">
+                    <option value="all">All Types</option>
+                </select>
+            </div>
+            <button id="reset-filters">Reset All Filters</button>
+
+            <!--**************************************** UPDATE THESE LINKS EACH YEAR ****************************************-->
+            <a href="https://class-schedule.app.utah.edu/main/1254/class_list.html?subject=CH%20EN" class="link-button" target="_blank" rel="noopener noreferrer">Official U of U Schedule</a>
+            <!--<a href="#" class="link-button" target="_blank" rel="noopener noreferrer">Previous Year's Schedule</a>-->
+
+        </div>
+        
+        <div class="course-filter-container">
+            <h3>Filter by Course (select multiple)</h3>
+            <div id="course-checkboxes" class="checkbox-container">
+                </div>
+        </div>
+
+        <div class="calendar-container">
+            <div class="calendar-grid">
+                <div class="time-column">
+                    <div class="time-slot header">Time</div>
+                </div>
+                <div class="day-column">
+                    <div class="day-header">Monday</div>
+                    <div class="day-content" data-day="Mo"></div>
+                </div>
+                <div class="day-column">
+                    <div class="day-header">Tuesday</div>
+                    <div class="day-content" data-day="Tu"></div>
+                </div>
+                <div class="day-column">
+                    <div class="day-header">Wednesday</div>
+                    <div class="day-content" data-day="We"></div>
+                </div>
+                <div class="day-column">
+                    <div class="day-header">Thursday</div>
+                    <div class="day-content" data-day="Th"></div>
+                </div>
+                <div class="day-column">
+                    <div class="day-header">Friday</div>
+                    <div class="day-content" data-day="Fr"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
