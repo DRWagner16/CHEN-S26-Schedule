@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function fetchDataAndInitialize() {
-        fetch('S25schedule.json')
+        fetch('S26schedule.json')
             .then(response => response.json())
             .then(data => {
                 allCourses = data.map(course => {
