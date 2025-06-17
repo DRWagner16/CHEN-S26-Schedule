@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const timeColumn = document.querySelector('.time-column');
     const instructorFilter = document.getElementById('instructor-filter');
     const typeFilter = document.getElementById('type-filter');
+    const locationFilter = document.getElementById('location-filter'); // <-- 1. ADDED
     const courseCheckboxesContainer = document.getElementById('course-checkboxes');
     const resetBtn = document.getElementById('reset-filters');
 
@@ -19,10 +20,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     instructorFilter.addEventListener('change', filterAndRedrawCalendar);
     typeFilter.addEventListener('change', filterAndRedrawCalendar);
+    locationFilter.addEventListener('change', filterAndRedrawCalendar); // <-- 2. ADDED
     courseCheckboxesContainer.addEventListener('change', filterAndRedrawCalendar);
+
     resetBtn.addEventListener('click', () => {
         instructorFilter.value = 'all';
         typeFilter.value = 'all';
+        locationFilter.value = 'all'; // <-- 3. ADDED
         document.querySelectorAll('#course-checkboxes input[type="checkbox"]').forEach(cb => cb.checked = false);
         filterAndRedrawCalendar();
     });
@@ -77,6 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
         uniqueCourses.forEach(courseName => {
             courseColorMap.set(courseName, stringToHslColor(courseName));
         });
+
         const allInstructorNames = courses.flatMap(course => course.instructors.split(';').map(name => name.trim()));
         const uniqueInstructors = [...new Set(allInstructorNames)].sort();
         uniqueInstructors.forEach(name => {
@@ -87,6 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 instructorFilter.appendChild(option);
             }
         });
+
         const uniqueTypes = [...new Set(courses.map(course => course.type))].sort();
         uniqueTypes.forEach(typeName => {
             if (typeName && typeName.toLowerCase() !== 'nan') {
@@ -96,6 +102,19 @@ document.addEventListener('DOMContentLoaded', () => {
                 typeFilter.appendChild(option);
             }
         });
+
+        // --- 4. START: ADDED LOGIC FOR LOCATION FILTER ---
+        const uniqueLocations = [...new Set(courses.map(course => course.location))].sort();
+        uniqueLocations.forEach(locationName => {
+            if (locationName && locationName.toLowerCase() !== 'nan') {
+                const option = document.createElement('option');
+                option.value = locationName;
+                option.textContent = locationName;
+                locationFilter.appendChild(option);
+            }
+        });
+        // --- END: ADDED LOGIC FOR LOCATION FILTER ---
+
         uniqueCourses.forEach(courseName => {
             const itemDiv = document.createElement('div');
             itemDiv.className = 'checkbox-item';
@@ -104,7 +123,7 @@ document.addEventListener('DOMContentLoaded', () => {
             checkbox.id = courseName;
             checkbox.value = courseName;
             const label = document.createElement('label');
-label.htmlFor = courseName;
+            label.htmlFor = courseName;
             label.textContent = courseName;
             itemDiv.appendChild(checkbox);
             itemDiv.appendChild(label);
@@ -117,13 +136,15 @@ label.htmlFor = courseName;
 
         const selectedInstructor = instructorFilter.value;
         const selectedType = typeFilter.value;
+        const selectedLocation = locationFilter.value; // <-- 5. ADDED
         const selectedCourses = Array.from(document.querySelectorAll('#course-checkboxes input:checked')).map(cb => cb.value);
 
         const filteredCourses = allCourses.filter(course => {
             const instructorMatch = (selectedInstructor === 'all' || course.instructors.includes(selectedInstructor));
             const typeMatch = (selectedType === 'all' || course.type === selectedType);
+            const locationMatch = (selectedLocation === 'all' || course.location === selectedLocation); // <-- 6. ADDED
             const courseMatch = (selectedCourses.length === 0 || selectedCourses.includes(course.course_number));
-            return instructorMatch && typeMatch && courseMatch;
+            return instructorMatch && typeMatch && courseMatch && locationMatch; // <-- 7. UPDATED
         });
 
         Object.values(dayMap).forEach(dayCode => {
@@ -158,8 +179,6 @@ label.htmlFor = courseName;
     }
     
     function placeCourseOnCalendar(course, day, width = 100, left = 0) {
-        // --- THIS IS THE ONLY LINE CHANGED IN THIS SCRIPT ---
-        // We now look for the new .day-content container to place the event
         const column = document.querySelector(`.day-content[data-day="${day}"]`);
         if (!column) return;
         
