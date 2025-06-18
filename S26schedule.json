@@ -1,0 +1,380 @@
+[
+    {
+        "course_number": "CH EN 1703",
+        "instructors": "Holmes",
+        "days": "TR",
+        "time_of_day": "09:10AM-10:30AM",
+        "duration": 80,
+        "location": "TBA",
+        "type": "Year 1"
+    },
+    {
+        "course_number": "CH EN 1703",
+        "instructors": "Holmes",
+        "days": "R",
+        "time_of_day": "10:45AM-11:35AM",
+        "duration": 50,
+        "location": "MEB 1292",
+        "type": "Year 1"
+    },
+    {
+        "course_number": "CH EN 1705-Lec",
+        "instructors": "Butterfield; Firth; Mohanty",
+        "days": "M",
+        "time_of_day": "10:45AM-11:35AM",
+        "duration": 50,
+        "location": "WEB 1230",
+        "type": "Year 1"
+    },
+    {
+        "course_number": "CH EN 1705-Lab",
+        "instructors": "Butterfield; Firth; Mohanty",
+        "days": "R",
+        "time_of_day": "09:10AM-12:05PM",
+        "duration": 175,
+        "location": "MEB 1292",
+        "type": "Year 1"
+    },
+    {
+        "course_number": "CH EN 1705-Lab",
+        "instructors": "Butterfield; Firth; Mohanty",
+        "days": "F",
+        "time_of_day": "09:40AM-12:40PM",
+        "duration": 180,
+        "location": "MEB 1292",
+        "type": "Year 1"
+    },
+    {
+        "course_number": "CH EN 1705-Lab",
+        "instructors": "Butterfield; Firth; Mohanty",
+        "days": "F",
+        "time_of_day": "02:00PM-05:00PM",
+        "duration": 180,
+        "location": "MEB 1292",
+        "type": "Year 1"
+    },
+    {
+        "course_number": "CH EN 2550-Stats",
+        "instructors": "Saad",
+        "days": "TR",
+        "time_of_day": "02:00PM-03:20PM",
+        "duration": 80,
+        "location": "TBA",
+        "type": "Year 2"
+    },
+    {
+        "course_number": "CH EN 2800-ProFund",
+        "instructors": "Fernandes",
+        "days": "MWF",
+        "time_of_day": "09:40AM-10:30AM",
+        "duration": 50,
+        "location": "TBA",
+        "type": "Year 2"
+    },
+    {
+        "course_number": "CH EN 2955-Seminar",
+        "instructors": "Eddings",
+        "days": "T",
+        "time_of_day": "10:45AM-11:35AM",
+        "duration": 50,
+        "location": "TBA",
+        "type": "Other"
+    },
+    {
+        "course_number": "CH EN 3253-Safety",
+        "instructors": "Deo; Wagner",
+        "days": "MWF",
+        "time_of_day": "09:40AM-10:30AM",
+        "duration": 50,
+        "location": "TBA",
+        "type": "Other"
+    },
+    {
+        "course_number": "CH EN 3453-Heat",
+        "instructors": "Clavijo",
+        "days": "MWF",
+        "time_of_day": "12:55PM-01:45PM",
+        "duration": 50,
+        "location": "TBA",
+        "type": "Year 3"
+    },
+    {
+        "course_number": "CH EN 3553-Kinetics",
+        "instructors": "Duan; Nigra",
+        "days": "MW",
+        "time_of_day": "1:50AM-01:10PM",
+        "duration": 680,
+        "location": "TBA",
+        "type": "Year 3"
+    },
+    {
+        "course_number": "CH EN 3603-Mass",
+        "instructors": "Gao",
+        "days": "MWF",
+        "time_of_day": "08:35AM-09:25AM",
+        "duration": 50,
+        "location": "TBA",
+        "type": "Year 3"
+    },
+    {
+        "course_number": "CH EN 3702-JunLab",
+        "instructors": "McLennan; Kelly; Sant",
+        "days": "M",
+        "time_of_day": "02:00PM-05:00PM",
+        "duration": 180,
+        "location": "MEB 2550",
+        "type": "Year 3"
+    },
+    {
+        "course_number": "CH EN 3702-JunLab",
+        "instructors": "McLennan; Kelly; Sant",
+        "days": "T",
+        "time_of_day": "02:00PM-05:00PM",
+        "duration": 180,
+        "location": "MEB 2550",
+        "type": "Year 3"
+    },
+    {
+        "course_number": "CH EN 4707-Cap",
+        "instructors": "Butterfield",
+        "days": "W",
+        "time_of_day": "12:55PM-01:45PM",
+        "duration": 50,
+        "location": "TBA",
+        "type": "Year 4"
+    },
+    {
+        "course_number": "CH EN 4707-Cap",
+        "instructors": "Butterfield",
+        "days": "W",
+        "time_of_day": "02:00PM-05:00PM",
+        "duration": 180,
+        "location": "MEB 1292",
+        "type": "Year 4"
+    },
+    {
+        "course_number": "CH EN 4707-Cap",
+        "instructors": "Butterfield",
+        "days": "R",
+        "time_of_day": "12:55PM-01:45PM",
+        "duration": 50,
+        "location": "MEB 1292",
+        "type": "Year 4"
+    },
+    {
+        "course_number": "CH EN 4707-Cap",
+        "instructors": "Butterfield",
+        "days": "R",
+        "time_of_day": "02:00PM-05:00PM",
+        "duration": 180,
+        "location": "MEB 1292",
+        "type": "Year 4"
+    },
+    {
+        "course_number": "CH EN 4870-IEA",
+        "instructors": "Sieving; Powell",
+        "days": "W",
+        "time_of_day": "04:10PM-05:00PM",
+        "duration": 50,
+        "location": "CANVAS",
+        "type": "Other"
+    },
+    {
+        "course_number": "CH EN 5103-Bio",
+        "instructors": "Sant",
+        "days": "TR",
+        "time_of_day": "10:45AM-12:05PM",
+        "duration": 80,
+        "location": "TBA",
+        "type": "Year 3"
+    },
+    {
+        "course_number": "CH EN 5203/6203-LinContSys",
+        "instructors": "Abbott",
+        "days": "TR",
+        "time_of_day": "10:45AM-12:05PM",
+        "duration": 80,
+        "location": "TBA",
+        "type": "Elective"
+    },
+    {
+        "course_number": "CH EN 5205/6205-SmartSys",
+        "instructors": "Powell",
+        "days": "TR",
+        "time_of_day": "07:30AM-08:50AM",
+        "duration": 80,
+        "location": "TBA",
+        "type": "Elective"
+    },
+    {
+        "course_number": "CH EN 5253-Process",
+        "instructors": "Wagner",
+        "days": "MWF",
+        "time_of_day": "08:35AM-09:25AM",
+        "duration": 50,
+        "location": "TBA",
+        "type": "Year 4"
+    },
+    {
+        "course_number": "CH EN 5254-Product",
+        "instructors": "Skliar; Porter",
+        "days": "MWF",
+        "time_of_day": "08:35AM-09:25AM",
+        "duration": 50,
+        "location": "TBA",
+        "type": "Year 4"
+    },
+    {
+        "course_number": "CH EN 3780/6780-Sust",
+        "instructors": "Firth; Wagner",
+        "days": "TR",
+        "time_of_day": "02:00PM-03:20PM",
+        "duration": 80,
+        "location": "TBA",
+        "type": "Elective"
+    },
+    {
+        "course_number": "CH EN 5840/6840-Nano",
+        "instructors": "Wang",
+        "days": "TR",
+        "time_of_day": "09:10AM-10:30AM",
+        "duration": 80,
+        "location": "TBA",
+        "type": "Elective"
+    },
+    {
+        "course_number": "CH EN 5960-Bioprocess",
+        "instructors": "Zangle; Skliar",
+        "days": "WF",
+        "time_of_day": "02:00PM-05:00PM",
+        "duration": 180,
+        "location": "MEB 3520",
+        "type": "Elective"
+    },
+    {
+        "course_number": "CH EN 5960-OChem",
+        "instructors": "Nigra",
+        "days": "TR",
+        "time_of_day": "09:10AM-10:30AM",
+        "duration": 80,
+        "location": "TBA",
+        "type": "Year 2"
+    },
+    {
+        "course_number": "CH EN 5960-MolSim",
+        "instructors": "Hoepfner",
+        "days": "MWF",
+        "time_of_day": "10:45AM-11:35AM",
+        "duration": 50,
+        "location": "TBA",
+        "type": "Elective"
+    },
+    {
+        "course_number": "CH EN 5960-Semicond",
+        "instructors": "Sant",
+        "days": "WF",
+        "time_of_day": "03:00PM-04:20PM",
+        "duration": 80,
+        "location": "TBA",
+        "type": "Elective"
+    },
+    {
+        "course_number": "CH EN 5960-AddMan",
+        "instructors": "Huang",
+        "days": "MW",
+        "time_of_day": "11:50AM-01:10PM",
+        "duration": 80,
+        "location": "TBA",
+        "type": "Elective"
+    },
+    {
+        "course_number": "CH EN 6208-ML",
+        "instructors": "Faroughi",
+        "days": "MW",
+        "time_of_day": "01:25PM-02:45PM",
+        "duration": 80,
+        "location": "TBA",
+        "type": "Elective"
+    },
+    {
+        "course_number": "CH EN 6553-GKinetics",
+        "instructors": "Duan",
+        "days": "TR",
+        "time_of_day": "10:45AM-12:05PM",
+        "duration": 80,
+        "location": "TBA",
+        "type": "Gradaute"
+    },
+    {
+        "course_number": "CH EN 6603-GTransport",
+        "instructors": "Chen",
+        "days": "TR",
+        "time_of_day": "09:10AM-10:30AM",
+        "duration": 80,
+        "location": "TBA",
+        "type": "Gradaute"
+    },
+    {
+        "course_number": "CH EN 7755-IntroResearch",
+        "instructors": "Skliar",
+        "days": "T",
+        "time_of_day": "12:25PM-01:45PM",
+        "duration": 80,
+        "location": "MEB 3291",
+        "type": "Gradaute"
+    },
+    {
+        "course_number": "CH EN 7857-GSeminar",
+        "instructors": "McLennan",
+        "days": "F",
+        "time_of_day": "10:45AM-11:45AM",
+        "duration": 60,
+        "location": "TBA",
+        "type": "Gradaute"
+    },
+    {
+        "course_number": "ENGIN 1022-Lec",
+        "instructors": "Firth",
+        "days": "T",
+        "time_of_day": "12:25PM-01:45PM",
+        "duration": 80,
+        "location": "TBA",
+        "type": "Other"
+    },
+    {
+        "course_number": "ENGIN 1022-Lab",
+        "instructors": "Firth",
+        "days": "R",
+        "time_of_day": "12:25PM-01:45PM",
+        "duration": 80,
+        "location": "MEB 2550",
+        "type": "Other"
+    },
+    {
+        "course_number": "ENGIN 1022-Lab",
+        "instructors": "Firth",
+        "days": "F",
+        "time_of_day": "11:50AM-01:10PM",
+        "duration": 80,
+        "location": "MEB 2550",
+        "type": "Other"
+    },
+    {
+        "course_number": "ENGIN 1022-Lab",
+        "instructors": "Firth",
+        "days": "F",
+        "time_of_day": "01:25PM-02:45PM",
+        "duration": 80,
+        "location": "MEB 2550",
+        "type": "Other"
+    },
+    {
+        "course_number": "ENGIN 1022-Lab",
+        "instructors": "Firth",
+        "days": "F",
+        "time_of_day": "03:00PM-04:20PM",
+        "duration": 80,
+        "location": "MEB 2550",
+        "type": "Other"
+    }
+]
